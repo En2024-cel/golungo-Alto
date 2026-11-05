@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administração Municipal do Golungo Alto</title>
+<meta name="description" content="Portal oficial da Administração Municipal do Golungo Alto, Cuanza Norte: serviços, notícias, cultura, história e informações ao munícipe.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container">
+  <span>📍 Golungo Alto · Província do Cuanza Norte · República de Angola</span>
+  <span>🕒 Segunda a Sexta, 07h30 – 15h30</span>
+</div></div>
+
+<header class="site"><div class="container header-in">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Insígnia da República de Angola">
+    <span><small>República de Angola</small><strong>Administração Municipal<br>do Golungo Alto</strong></span>
+  </a>
+  <button class="menu-btn" aria-label="Abrir menu" onclick="document.getElementById('menu').classList.toggle('aberto')">☰</button>
+  <nav id="menu"><ul>
+    <li><a class="ativo" href="index.html">Início</a></li>
+    <li><a href="municipio.html">O Município</a></li>
+    <li><a href="administracao.html">Administração</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="noticias.html">Notícias</a></li>
+    <li><a href="portal.html">Portal do Munícipe</a></li>
+    <li><a href="contactos.html">Contactos</a></li>
+  </ul></nav>
+</div></header>
+
+<!-- Aviso dinâmico (tabela avisos) -->
+<div class="aviso" id="aviso" hidden></div>
+
+<section class="hero"><div class="container">
+  <div>
+    <h1>Bem-vindo ao portal da Administração Municipal do Golungo Alto</h1>
+    <p>Conheça o município, acompanhe as notícias, consulte os serviços e faça os seus pedidos de forma simples e transparente.</p>
+    <a class="btn btn-ouro" href="portal.html">Fazer um pedido</a>
+    <a class="btn btn-outline" href="servicos.html">Ver serviços</a>
+  </div>
+  <img src="assets/logo.png" alt="Insígnia da República de Angola">
+</div></section>
+
+<section class="atalhos"><div class="container grid g4">
+  <div class="card atalho"><a href="servicos.html"><div class="icone">📄</div><h3>Serviços</h3><p>Documentos, licenças e registos.</p></a></div>
+  <div class="card atalho"><a href="portal.html#acompanhar"><div class="icone">🔎</div><h3>Acompanhar pedido</h3><p>Consulte o estado com o nº de protocolo.</p></a></div>
+  <div class="card atalho"><a href="portal.html#informacao"><div class="icone">💬</div><h3>Pedir informação</h3><p>Dúvidas, sugestões e reclamações.</p></a></div>
+  <div class="card atalho"><a href="noticias.html"><div class="icone">📰</div><h3>Notícias</h3><p>Últimas actividades do município.</p></a></div>
+</div></section>
+
+<section>
+<div class="container">
+  <div class="sec-titulo"><h2>A Nossa Administração</h2><p>Quem dirige o município</p></div>
+  <div class="admin-box" id="administrador">
+    <div class="foto">👤</div>
+    <div>
+      <div class="cargo">Administrador Municipal</div>
+      <h3 style="font-size:1.6rem;color:var(--azul-escuro)">Nome do Administrador</h3>
+      <p style="margin:.8rem 0;color:var(--cinza)">Mensagem de boas-vindas do Administrador Municipal aos munícipes. Este texto é gerido na área reservada.</p>
+      <a class="btn btn-ouro" href="administracao.html">Conhecer a equipa</a>
+    </div>
+  </div>
+  <div class="grid g3 adjuntos" style="margin-top:1.4rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))" id="adjuntos">
+    <div class="card"><div class="foto">👤</div><div class="cargo">Administrador Adjunto</div><h3>Nome do 1.º Adjunto</h3><p>Área / pelouro</p></div>
+    <div class="card"><div class="foto">👤</div><div class="cargo">Administrador Adjunto</div><h3>Nome do 2.º Adjunto</h3><p>Área / pelouro</p></div>
+  </div>
+</div></section>
+
+<section style="background:#fff">
+<div class="container">
+  <div class="sec-titulo"><h2>Conheça o Golungo Alto</h2><p>História, geografia, cultura e identidade</p></div>
+  <div class="grid g4">
+    <div class="card"><div class="icone">📜</div><h3>História</h3><p>As origens e a evolução do município.</p><a href="municipio.html#historia">Saber mais →</a></div>
+    <div class="card"><div class="icone">🗺️</div><h3>Geografia</h3><p>Localização, relevo, clima e comunas.</p><a href="municipio.html#geografia">Saber mais →</a></div>
+    <div class="card"><div class="icone">🎭</div><h3>Cultura</h3><p>Tradições, gastronomia e festividades.</p><a href="municipio.html#cultura">Saber mais →</a></div>
+    <div class="card"><div class="icone">🇦🇴</div><h3>Identidade</h3><p>Símbolos, valores e orgulho local.</p><a href="municipio.html#identidade">Saber mais →</a></div>
+  </div>
+</div></section>
+
+<section class="numeros"><div class="container grid g4">
+  <div><div class="n" id="n-pop">—</div>Habitantes</div>
+  <div><div class="n" id="n-area">—</div>Km² de área</div>
+  <div><div class="n" id="n-comunas">—</div>Comunas</div>
+  <div><div class="n" id="n-servicos">—</div>Serviços disponíveis</div>
+</div></section>
+
+<section>
+<div class="container">
+  <div class="sec-titulo"><h2>Últimas Notícias</h2><p>Acompanhe a actividade da administração</p></div>
+  <div class="grid g3" id="lista-noticias">
+    <article class="card noticia"><div class="thumb"></div><div class="data">00/00/0000</div><h3>Título da notícia</h3><p>Resumo da notícia carregado a partir da base de dados.</p></article>
+    <article class="card noticia"><div class="thumb"></div><div class="data">00/00/0000</div><h3>Título da notícia</h3><p>Resumo da notícia carregado a partir da base de dados.</p></article>
+    <article class="card noticia"><div class="thumb"></div><div class="data">00/00/0000</div><h3>Título da notícia</h3><p>Resumo da notícia carregado a partir da base de dados.</p></article>
+  </div>
+  <p style="text-align:center;margin-top:1.6rem"><a class="btn btn-ouro" href="noticias.html">Todas as notícias</a></p>
+</div></section>
+
+<footer class="site"><div class="container">
+  <div class="cols">
+    <div><h4>Administração Municipal do Golungo Alto</h4><p>Província do Cuanza Norte, República de Angola.</p></div>
+    <div><h4>Ligações</h4><a href="municipio.html">O Município</a><a href="administracao.html">Administração</a><a href="servicos.html">Serviços</a><a href="noticias.html">Notícias</a></div>
+    <div><h4>Contactos</h4><p id="f-tel">Telefone: —</p><p id="f-email">Email: —</p><p id="f-morada">Morada: —</p></div>
+    <div><h4>Área reservada</h4><a href="/admin/login.html">Acesso dos funcionários</a></div>
+  </div>
+  <div class="copy">© <span id="ano"></span> Administração Municipal do Golungo Alto. Todos os direitos reservados.</div>
+</div></footer>
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Ligação à API (Netlify Functions → Neon). Se ainda não existir, o site mostra o conteúdo de exemplo.
+async function api(path){ const r = await fetch('/.netlify/functions/'+path); if(!r.ok) throw 0; return r.json(); }
+
+(async()=>{
+  try{
+    const a = await api('avisos'); if(a.length){ const el=document.getElementById('aviso'); el.textContent=a[0].texto; el.hidden=false; }
+  }catch(e){}
+  try{
+    const n = await api('noticias?limite=3');
+    if(n.length){
+      document.getElementById('lista-noticias').innerHTML = n.map(x=>`
+        <article class="card noticia"><div class="thumb" ${x.imagem_url?`style="background:url('${x.imagem_url}') center/cover"`:''}></div>
+        <div class="data">${new Date(x.publicado_em).toLocaleDateString('pt-AO')}</div>
+        <h3>${x.titulo}</h3><p>${x.resumo||''}</p><a href="noticia.html?slug=${x.slug}">Ler mais →</a></article>`).join('');
+    }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
